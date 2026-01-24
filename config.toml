@@ -1,10 +1,10 @@
 # The URL the site will be built for
-title = "BelResumé"            # Your site name
-description = "John Doe | Senior Software Engineer"  # Shown in meta and hero
-base_url = "https://yourdomain.com"
+title = "RedwaneResume"            # Your site name
+description = "Redwane AIT BRAHIM | Junior Data Engineer"  # Shown in meta and hero
+base_url = "https://Red1RedwaneResume.com"
 
 # Use base_url present below if deploying using GitHub Pages
-# base_url = "https://yourusername.github.io/BelResume"
+# base_url = "https://Redwane-stdy.github.io/BelResume"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -15,7 +15,6 @@ build_search_index = false
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
 
 [extra]
 # Put all your custom variables here
