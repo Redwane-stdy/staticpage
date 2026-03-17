@@ -1,3 +1,79 @@
-:root{--primary:#3b82f6;--secondary:#10b981;--background:#ffffff;--text:#1f2937;--card:#f9fafb}.theme-blue{--primary:#3b82f6;--secondary:#10b981}.theme-purple{--primary:#8b5cf6;--secondary:#ec4899}.theme-amber{--primary:#f59e0b;--secondary:#ef4444}.dark{--background:#1a1a2e;--text:#e2e8f0;--card:#16213e}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}.floating{animation:float 6s ease-in-out infinite}.resume-section{transition:all 0.3s ease}.resume-section:hover{transform:translateY(-5px)}.theme-selector{cursor:pointer;transition:all 0.3s ease}.theme-selector:hover{transform:scale(1.1)}.skill-bar{height:8px;border-radius:4px}.progress{height:100%;border-radius:4px;transition:width 1s ease-in-out}
+/* =============================================
+   CSS Variables – Default Theme (Blue)
+   ============================================= */
+:root {
+  --primary:    #3b82f6;
+  --secondary:  #10b981;
+  --background: #ffffff;
+  --text:       #1f2937;
+  --card:       #f9fafb;
+}
 
-/*You can write your own CSS below*/
+/* =============================================
+   Color Themes
+   ============================================= */
+.theme-blue   { --primary: #3b82f6; --secondary: #10b981; }
+.theme-purple { --primary: #8b5cf6; --secondary: #ec4899; }
+.theme-amber  { --primary: #f59e0b; --secondary: #ef4444; }
+
+/* =============================================
+   Dark Mode
+   ============================================= */
+.dark {
+  --background: #1a1a2e;
+  --text:       #e2e8f0;
+  --card:       #16213e;
+}
+
+/* =============================================
+   Floating Background Orbs
+   ============================================= */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-20px); }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* =============================================
+   Resume Section Cards
+   ============================================= */
+.resume-section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* =============================================
+   Theme Selector Dots
+   ============================================= */
+.theme-selector {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.theme-selector:hover {
+  transform: scale(1.2);
+}
+
+/* =============================================
+   Skill Progress Bars
+   ============================================= */
+.skill-bar {
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--card);
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--primary);
+  transition: width 1s ease-in-out;
+}
